@@ -1,0 +1,18 @@
+{
+  "code": 0,
+  "result": {
+    "data": {
+      "estimation": {
+        "token": {
+          "name": "GGR",
+          "address": "0x904Bd5a5AAC0B9d88A0D47864724218986Ad4a3a",
+          "symbol": "GGR",
+          "decimals": 18,
+          "chainId": 25,
+          "logoUri": "/images/GGR_token.jpg"
+        },
+        "quantity": "1000"
+      }
+    }
+  }
+}
