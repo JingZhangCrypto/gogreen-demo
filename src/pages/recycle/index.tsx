@@ -55,9 +55,9 @@ function Recycle() {
           marginBottom: 0,
         },
       }}>
-        <StyledCardHeader title={StartWithUppercase(collection.type)}></StyledCardHeader>
+        <StyledCardHeader title={StartWithUppercase(collection.name)}></StyledCardHeader>
           <StyledCardContent>
-          <Box
+          {collection.quantity && <Box
             sx={{
               ml: 3,
               display: 'flex',
@@ -70,11 +70,11 @@ function Recycle() {
             }}
           >
             <Typography sx={{ fontWeight: 600 }}>Quantity: </Typography>
-            <Typography variant="body2" sx={{ fontSize: '0.9rem' }}>
+            <Typography variant="body2" sx={{ fontSize: '0.9rem', fontWeight: 500 }}>
               {collection.quantity}
             </Typography>
-          </Box>
-          <Box
+          </Box>}
+          {collection.weight && <Box
             sx={{
               ml: 3,
               display: 'flex',
@@ -83,10 +83,10 @@ function Recycle() {
             }}
           >
             <Typography sx={{ fontWeight: 600 }}>Weight: </Typography>
-            <Typography variant="body2" sx={{ fontSize: '0.9rem' }}>
+            <Typography variant="body2" sx={{ fontSize: '0.9rem', fontWeight: 500 }}>
               {collection.weight}{collection.weightUnit}
             </Typography>
-          </Box>
+          </Box>}
         </StyledCardContent>
       </Card>
       ))}

@@ -16,6 +16,16 @@ const StyledTitle = styled('div')(({ theme }) => ({
   color: theme.palette.common.white,
 }))
 
+const StyledText = styled('span')(({ theme }) => ({
+  fontWeight: 600,
+  fontSize: '24px',
+  textAlign: 'center',
+  color: 'transparent',
+  lineHeight: '48px',
+  WebkitBackgroundClip: 'text',
+  backgroundImage: `linear-gradient(98deg, ${theme.palette.customColors.primaryGradient}, ${theme.palette.primary.main} 94%)`,
+}))
+
 const StyledContent = styled('p')(({ theme }) => ({
   fontWeight: 500,
   fontSize: '16px',
@@ -33,7 +43,7 @@ function Home() {
 
   return (
     <Box>
-      <StyledContainer>
+      <StyledContainer sx={{mb: 0}}>
         <StyledTitle>{t('whatAreGreenOrbs')}</StyledTitle>
         <StyledContent>
           These green orbs are a kind of celestial sphere and they are powerful
@@ -45,6 +55,23 @@ function Home() {
           the rewards list.
         </StyledContent>
       </StyledContainer>
+      <Box sx={{
+        height: '1000px',
+        paddingTop: '32px',
+        textAlign: 'center',
+        backgroundImage: 'url(https://img.freepik.com/free-photo/green-recycling-trash-can-filled-with-used-cans-with-design-space-gray-background_53876-104849.jpg?w=2000)'
+      }}>
+        <StyledText sx={theme => ({color: theme.palette.primary.dark, my: '32px'})}>The Total quantity we have recycled</StyledText>
+        <Box>
+          <StyledText>Plastic bottles: 15389000</StyledText>
+        </Box>
+        <Box>
+          <StyledText>Cans: 9389000</StyledText>
+        </Box>
+        <Box>
+          <StyledText>Paper: 128970 kg</StyledText>
+        </Box>
+      </Box>
       <StyledContainer>
         <StyledTitle>Why CrononGoGreen ?</StyledTitle>
         <StyledContent>
