@@ -3,6 +3,7 @@ import ContactPageOutlinedIcon from '@mui/icons-material/ContactPageOutlined'
 import CurrencyExchangeOutlinedIcon from '@mui/icons-material/CurrencyExchangeOutlined'
 import ManageSearchIcon from '@mui/icons-material/ManageSearch'
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined'
+import HomeOutlined from '@mui/icons-material/HomeOutlined'
 import { useTranslation } from 'react-i18next'
 
 import { VerticalNavItemsType } from 'src/@core/layouts/types'
@@ -14,7 +15,7 @@ export const useVerticalNavigationItems = (): VerticalNavItemsType => {
   return [
     {
       title: t('home'),
-      icon: WalletOutline,
+      icon: HomeOutlined,
       path: ROUTE_PATH.HOME,
     },
     {

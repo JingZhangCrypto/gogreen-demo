@@ -92,8 +92,7 @@ const LayoutAppBar = (props: Props) => {
           }),
         }}
       >
-        {(userVerticalAppBarContent && userVerticalAppBarContent(props)) ||
-          null}
+        {(userVerticalAppBarContent && userVerticalAppBarContent(props))}
       </Toolbar>
     </AppBar>
   )
