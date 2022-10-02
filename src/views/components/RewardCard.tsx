@@ -18,6 +18,7 @@ interface RewardCardProps {
   imageUrl: string
   originLink: string
   badge?: string
+  isRedeemVisible?: boolean
 }
 
 function RewardCard({
@@ -26,6 +27,7 @@ function RewardCard({
   imageUrl,
   originLink,
   badge,
+  isRedeemVisible,
 }: RewardCardProps) {
   return (
     <Card sx={{ maxWidth: 300, position: 'relative' }}>
@@ -58,7 +60,7 @@ function RewardCard({
         </Typography>
       </CardContent>
       <CardActions sx={{ px: 1 }}>
-        <Button size="small">Redeem</Button>
+        {isRedeemVisible && <Button size="small">Redeem</Button>}
         <Link href={originLink}>
           <Button size="small">Learn More</Button>
         </Link>

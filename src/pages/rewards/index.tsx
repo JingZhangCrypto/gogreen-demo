@@ -84,7 +84,7 @@ function Rewards() {
         <Grid container spacing={2} rowSpacing={7}>
           {REAL_REWARDS.map(reward => (
             <Grid key={reward.name} item xs={3}>
-              <RewardCard {...reward} />
+              <RewardCard isRedeemVisible {...reward} />
             </Grid>
           ))}
         </Grid>
@@ -96,7 +96,7 @@ function Rewards() {
         <Grid container spacing={2} rowSpacing={7}>
           {NFT_REWARDS.map(reward => (
             <Grid key={reward.name} item xs={3}>
-              <RewardCard {...reward} />
+              <RewardCard isRedeemVisible {...reward} />
             </Grid>
           ))}
         </Grid>
