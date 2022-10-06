@@ -1,6 +1,8 @@
 import { retainFL6Digits } from 'src/utils/stringHelpers'
 import HistoryTable, { Column } from 'src/views/components/HistoryTable'
 
+import Recycle from '../recycle'
+
 const columns: Column[] = [
   { id: 'transactionType', label: 'Transaction Type', minWidth: 170 },
   {
@@ -52,6 +54,10 @@ const rows = [
 ]
 
 function History() {
-  return <HistoryTable columns={columns} rows={rows} />
+  return <>
+    <Recycle />
+    <HistoryTable columns={columns} rows={rows} />
+  </>
+
 }
 export default History

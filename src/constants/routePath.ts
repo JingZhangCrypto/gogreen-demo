@@ -5,6 +5,5 @@ export const ROUTE_PATH = {
   STAKE: '/stake',
   HISTORY: '/history',
   REWARDS: '/rewards',
-  RECYCLE: '/recycle',
   FAQ: '/faq',
 }

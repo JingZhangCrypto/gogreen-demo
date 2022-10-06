@@ -29,11 +29,6 @@ export const useVerticalNavigationItems = (): VerticalNavItemsType => {
       path: ROUTE_PATH.REWARDS,
     },
     {
-      title: t('recycle'),
-      icon: RecycleVariant,
-      path: ROUTE_PATH.RECYCLE,
-    },
-    {
       title: t('history'),
       icon: ManageSearchIcon,
       path: ROUTE_PATH.HISTORY,
